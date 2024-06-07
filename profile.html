@@ -72,6 +72,13 @@
         border-top: 1px solid #888;
         margin: 20px 0;
       }
+      .logo {
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: translateY(-5px);
+      }
     </style>
   </head>
   <body>
@@ -81,6 +88,7 @@
           src="assets/imgs/icons/netflix_logo.png"
           alt="Netflix Logo"
           height="50"
+          class="logo"
         />
       </a>
     </header>
