@@ -8,32 +8,38 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
     <style>
       body {
         background-color: #000;
+      }
+      footer a {
+        color: #888;
+        text-decoration: none;
+      }
+      footer a:hover {
         color: #fff;
       }
-      .navbar {
-        background-color: #141414;
+      footer p {
+        color: #888;
       }
-      .navbar-brand,
-      .nav-link,
-      .dropdown-item {
-        color: #fff !important;
-      }
-      .section-title {
+      .footer-columns {
         margin-top: 20px;
-        margin-bottom: 10px;
       }
-      .movie-grid img {
-        width: 100%;
-        height: auto;
+      .btn-service-code {
+        margin-top: 10px;
       }
     </style>
   </head>
-  <body>
+  <body class="text-white">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #141414"
+    >
       <a class="navbar-brand" href="#">
         <img
           src="assets/imgs/icons/netflix_logo.png"
@@ -92,8 +98,9 @@
               aria-expanded="false"
             >
               <img
-                src="https://via.placeholder.com/30"
-                class="rounded-circle"
+                src="assets/imgs/icons/avatar.png"
+                class="rounded-circle img-fluid"
+                style="height: 30px; width: 30px"
                 alt="Profile"
               />
             </a>
@@ -112,11 +119,13 @@
     </nav>
 
     <!-- TV Shows Section -->
-    <div class="container-fluid pl-4 mt-4">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2 class="section-title text-left">TV Shows</h2>
-        <div>
-          <div class="btn-group mr-2">
+    <div class="mt-4 ml-0 mr-0">
+      <div
+        class="d-flex justify-content-between align-items-center ml-0 mr-0 pl-3 pr-3"
+      >
+        <div class="d-flex align-items-center">
+          <h2 class="section-title mb-0 mr-3">TV Shows</h2>
+          <div class="btn-group">
             <button
               type="button"
               class="btn btn-outline-light dropdown-toggle"
@@ -132,6 +141,8 @@
               <a class="dropdown-item" href="#">Drama</a>
             </div>
           </div>
+        </div>
+        <div>
           <button type="button" class="btn btn-outline-light">
             <i class="fas fa-bars"></i>
           </button>
@@ -140,76 +151,135 @@
           </button>
         </div>
       </div>
+    </div>
 
-      <!-- Trending Now -->
-      <h3 class="section-title text-left">Trending Now</h3>
-      <div class="row movie-grid">
-        <div class="col-md-2">
-          <img src="assets/imgs/media0.webp" alt="Movie 1" />
+    <!-- Trending Now -->
+    <div class="mt-4 ml-0 mr-0 pl-3 pr-3">
+      <h3 class="section-title">Trending Now</h3>
+      <div class="row movie-grid ml-0 mr-0">
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media0.webp" alt="Movie 1" class="img-fluid" />
         </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media1.jpg" alt="Movie 2" />
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media1.jpg" alt="Movie 2" class="img-fluid" />
         </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media3.webp" alt="Movie 3" />
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media3.webp" alt="Movie 3" class="img-fluid" />
         </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media4.jpg" alt="Movie 4" />
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media4.jpg" alt="Movie 4" class="img-fluid" />
         </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media5.webp" alt="Movie 5" />
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media5.webp" alt="Movie 5" class="img-fluid" />
         </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media6.jpg" alt="Movie 6" />
-        </div>
-      </div>
-
-      <!-- Watch It Again -->
-      <h3 class="section-title text-left">Watch It Again</h3>
-      <div class="row movie-grid">
-        <div class="col-md-2">
-          <img src="assets/imgs/media7.webp" alt="Movie 1" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media8.webp" alt="Movie 2" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media9.jpg" alt="Movie 3" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media10.jpg" alt="Movie 4" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media11.jpg" alt="Movie 5" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media12.jpg" alt="Movie 6" />
-        </div>
-      </div>
-
-      <!-- New Releases -->
-      <h3 class="section-title text-left">New Releases</h3>
-      <div class="row movie-grid">
-        <div class="col-md-2">
-          <img src="assets/imgs/media13.jpg" alt="Movie 1" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media14.webp" alt="Movie 2" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media15.jpg" alt="Movie 3" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media16.webp" alt="Movie 4" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media17.jpg" alt="Movie 5" />
-        </div>
-        <div class="col-md-2">
-          <img src="assets/imgs/media18.jpg" alt="Movie 6" />
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media6.jpg" alt="Movie 6" class="img-fluid" />
         </div>
       </div>
     </div>
+
+    <!-- Watch It Again -->
+    <div class="mt-5 ml-0 mr-0 pl-3 pr-3">
+      <h3 class="section-title">Watch It Again</h3>
+      <div class="row movie-grid ml-0 mr-0">
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media7.webp" alt="Movie 1" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media8.webp" alt="Movie 2" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media9.jpg" alt="Movie 3" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media10.jpg" alt="Movie 4" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media11.jpg" alt="Movie 5" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media12.jpg" alt="Movie 6" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!-- New Releases -->
+    <div class="mt-5 ml-0 mr-0 pl-3 pr-3">
+      <h3 class="section-title">New Releases</h3>
+      <div class="row movie-grid ml-0 mr-0">
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media13.jpg" alt="Movie 1" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media14.webp" alt="Movie 2" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media15.jpg" alt="Movie 3" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media16.webp" alt="Movie 4" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media17.jpg" alt="Movie 5" class="img-fluid" />
+        </div>
+        <div class="col-md-2 pl-0 pr-0">
+          <img src="assets/imgs/media18.jpg" alt="Movie 6" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="mt-5" style="background-color: #000">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 mb-4">
+            <a href="#"><i class="fab fa-facebook-f text-white mr-3"></i></a>
+            <a href="#"><i class="fab fa-instagram text-white mr-3"></i></a>
+            <a href="#"><i class="fab fa-twitter text-white mr-3"></i></a>
+            <a href="#"><i class="fab fa-youtube text-white"></i></a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-2">
+            <a href="#" style="color: #757575">FAQ</a><br />
+            <a href="#" style="color: #757575">Help Center</a><br />
+            <a href="#" style="color: #757575">Account</a><br />
+            <a href="#" style="color: #757575">Media Center</a><br />
+          </div>
+          <div class="col-md-2">
+            <a href="#" style="color: #757575">Investor Relations</a><br />
+            <a href="#" style="color: #757575">Jobs</a><br />
+            <a href="#" style="color: #757575">Terms of Use</a><br />
+            <a href="#" style="color: #757575">Privacy</a><br />
+          </div>
+          <div class="col-md-2">
+            <a href="#" style="color: #757575">Cookie Preferences</a><br />
+            <a href="#" style="color: #757575">Corporate Information</a><br />
+            <a href="#" style="color: #757575">Contact Us</a>
+          </div>
+          <div class="col-md-2">
+            <a href="#" style="color: #757575">Speed Test</a><br />
+            <a href="#" style="color: #757575">Legal Notices</a><br />
+            <a href="#" style="color: #757575">Netflix Originals</a>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-2">
+            <button
+              type="button"
+              class="btn btn-outline-light btn-service-code"
+            >
+              Service Code
+            </button>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-12 text-center">
+            <p style="color: #757575">Netflix Italia</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
